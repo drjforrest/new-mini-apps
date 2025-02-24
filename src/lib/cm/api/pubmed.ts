@@ -1,4 +1,4 @@
-import type { SearchParams, SearchResponse, Citation } from '../types/types';
+import type { SearchParams, SearchResponse, Citation } from 'types/cm/types';
 
 interface PubMedAuthor {
   name: string;

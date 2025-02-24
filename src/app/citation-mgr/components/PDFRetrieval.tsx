@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Citation } from "../types/types";
+import type { Citation } from "types/cm/types";
 import { DropZone } from "./DropZone";
-import { extractCitationFromPDF } from "./pdfExtractor";
+import { extractCitationFromPDF } from "@lib/cm/pdfExtractor";
 import { Loader2 } from "lucide-react";
 
 interface PDFRetrievalProps {

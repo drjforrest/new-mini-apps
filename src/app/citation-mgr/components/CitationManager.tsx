@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Citation, SearchResult } from "../types/types";
+import type { Citation, SearchResult } from "types/cm/types";
 import { CitationList } from "./CitationList";
 import { SearchBar } from "./SearchBar";
 import { CitationExport } from "./CitationExport";

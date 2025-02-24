@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { AFRICAN_COUNTRIES } from '../data/african_countries';
-import type { Country } from '../types/country';
+import { AFRICAN_COUNTRIES } from 'data/countries';
+import type { Country } from 'types/fq/country';
 
 export function useFlags() {
   const [flags, setFlags] = useState<Record<string, string>>({});
@@ -12,7 +12,7 @@ export function useFlags() {
       try {
         const flagUrls = AFRICAN_COUNTRIES.reduce((acc, country) => ({
           ...acc,
-          [country.code]: country.flagUrl
+          [country.name]: country.flagUrl
         }), {} as Record<string, string>);
         
         setFlags(flagUrls);
@@ -27,4 +27,4 @@ export function useFlags() {
   }, []);
 
   return { flags, loading, error };
-} 
+}

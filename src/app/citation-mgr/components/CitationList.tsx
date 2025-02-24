@@ -1,6 +1,6 @@
 "use client";
 
-import { Citation, SearchResult } from "../types/types";
+import type { Citation, SearchResult } from "types/cm/types";
 import { Card } from "@components/index";
 
 interface CitationListProps {

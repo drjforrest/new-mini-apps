@@ -3,7 +3,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { AlertCircle as AlertIcon, CheckCircle, XCircle, AlertTriangle } from "lucide-react";
-import { cn } from "../utils/cn";
+import { cn } from "@lib/utils/cn";
 
 const alertVariants = cva(
   "relative w-full rounded-lg border p-4 transition-colors duration-200 [&>svg~*]:pl-7 [&>svg]:absolute [&>svg]:left-4 [&>svg]:top-4 [&>svg]:text-current",

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { SearchResult, Citation } from "../types/types";
+import type { SearchResult, Citation } from "types/cm/types";
 import { Button } from "@components/index";
 import { Check } from "lucide-react";
 

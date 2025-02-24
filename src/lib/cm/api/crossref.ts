@@ -1,5 +1,5 @@
-import type { SearchParams, SearchResponse, Citation, SearchResult } from '../types/types';
-import { fetchCitationFromCrossRef } from '../services/pdfExtractor';
+import type { SearchParams, SearchResponse, Citation, SearchResult } from 'types/cm/types';
+import { fetchCitationFromCrossRef } from '@lib/cm/pdfExtractor';
 
 const BASE_URL = 'https://api.crossref.org/works';
 
@@ -62,4 +62,4 @@ async function searchPapers({
 
 export const CrossRefAPI = {
   searchPapers
-}; 
+};

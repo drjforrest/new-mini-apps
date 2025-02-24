@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import { Copy, Download, Check } from "lucide-react";
 import { Button, Card } from "@components/index";
-import { Citation, CitationFormat, ExportFormat } from "../types/cm/index";
-import { formatCitation, downloadCitations } from "@lib/cm/format-citation";
+import type { Citation, CitationFormat, ExportFormat } from "types/cm/types";
+import { formatCitation, downloadCitations } from "@lib/cm/formatCitation";
 
 interface CitationExportProps {
   citations: Citation[];
@@ -22,8 +22,6 @@ const CITATION_FORMATS: { value: CitationFormat; label: string }[] = [
 
 export function CitationExport({ citations }: CitationExportProps) {
   const [format, setFormat] = useState<CitationFormat>("apa");
-  const [includeAbstracts, setIncludeAbstracts] = useState(false);
-  const [includeUrls, setIncludeUrls] = useState(true);
   const [showCopySuccess, setShowCopySuccess] = useState(false);
   const [showExportSuccess, setShowExportSuccess] = useState(false);
   const [previewContent, setPreviewContent] = useState(
@@ -32,19 +30,16 @@ export function CitationExport({ citations }: CitationExportProps) {
 
   useEffect(() => {
     if (citations.length > 0) {
-      const content = formatCitation(citations[0], format, {
-        includeAbstracts,
-        includeUrls,
-      });
+      const content = formatCitation(citations[0], format);
       setPreviewContent(content);
     } else {
       setPreviewContent("No citations to preview");
     }
-  }, [citations, format, includeAbstracts, includeUrls]);
+  }, [citations, format]);
 
   const handleCopy = async () => {
     const content = citations
-      .map((c) => formatCitation(c, format, { includeAbstracts, includeUrls }))
+      .map((c) => formatCitation(c, format))
       .join("\n\n");
     await navigator.clipboard.writeText(content);
     setShowCopySuccess(true);
@@ -80,28 +75,6 @@ export function CitationExport({ citations }: CitationExportProps) {
                 </option>
               ))}
             </select>
-          </div>
-
-          <div className="space-y-2">
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={includeAbstracts}
-                onChange={(e) => setIncludeAbstracts(e.target.checked)}
-                className="rounded border-border"
-              />
-              <span className="text-sm">Include abstracts</span>
-            </label>
-
-            <label className="flex items-center gap-2">
-              <input
-                type="checkbox"
-                checked={includeUrls}
-                onChange={(e) => setIncludeUrls(e.target.checked)}
-                className="rounded border-border"
-              />
-              <span className="text-sm">Include URLs/DOIs</span>
-            </label>
           </div>
 
           <div className="space-y-2">

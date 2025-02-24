@@ -1,4 +1,4 @@
-import type { Country } from "@types/fq/country";
+import type { Country } from "types/fq/country";
 
 declare const process: {
   env: {

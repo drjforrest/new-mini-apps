@@ -1,4 +1,4 @@
-import type { SearchParams, SearchResponse, Citation } from '../types/types';
+import type { SearchParams, SearchResponse, Citation } from 'types/cm/types';
 
 const API_KEY = typeof window !== 'undefined' 
   ? process.env.NEXT_PUBLIC_SEMANTIC_SCHOLAR_API_KEY 

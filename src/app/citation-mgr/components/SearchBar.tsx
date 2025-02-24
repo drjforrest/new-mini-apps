@@ -3,11 +3,11 @@
 import { useState } from "react";
 import { Search } from "lucide-react";
 import { Button } from "@components/index";
-import { Citation, SearchResult, APISource } from "../types/types";
-import { PubMedAPI } from "@lib/cm/api";
-import { SemanticScholarAPI } from "@lib/api/semanticScholar";
-import { citationCache } from "@lib/utils/cache";
-import { CrossRefAPI } from "@lib/api/crossref";
+import type { Citation, SearchResult, APISource } from "types/cm/types";
+import { PubMedAPI } from "@lib/cm/api/pubmed";
+import { SemanticScholarAPI } from "@lib/cm/api/semanticScholar";
+import { citationCache } from "@lib/cm/cache";
+import { CrossRefAPI } from "@lib/cm/api/crossref";
 
 interface SearchBarProps {
   onSearch: (results: SearchResult[]) => void;
