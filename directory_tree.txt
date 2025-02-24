@@ -1,0 +1,167 @@
+Tree diagram for: /Users/drjforrest/Development/DevProjects/WebDev/my-website/new-mini-apps/
+Generated on: 2025-02-23 18:09:34
+
+├── README.md
+├── directory_tree.txt
+├── next.config.js
+├── node_modules [...]
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public
+│   └── assets
+│       └── flags
+│           ├── algeria.svg
+│           ├── angola.svg
+│           ├── benin.svg
+│           ├── botswana.svg
+│           ├── burkina-faso.svg
+│           ├── burundi.svg
+│           ├── c-te-d-ivoire.svg
+│           ├── cameroon.svg
+│           ├── cape-verde.svg
+│           ├── central-african-republic.svg
+│           ├── chad.svg
+│           ├── comoros.svg
+│           ├── democratic-republic-of-the-congo.svg
+│           ├── djibouti.svg
+│           ├── equatorial-guinea.svg
+│           ├── eswatini.svg
+│           ├── ethiopia.svg
+│           ├── gabon.svg
+│           ├── gambia.svg
+│           ├── ghana.svg
+│           ├── guinea-bissau.svg
+│           ├── guinea.svg
+│           ├── kenya.svg
+│           ├── lesotho.svg
+│           ├── liberia.svg
+│           ├── libya.svg
+│           ├── madagascar.svg
+│           ├── malawi.svg
+│           ├── mali.svg
+│           ├── mauritania.svg
+│           ├── mauritius.svg
+│           ├── morocco.svg
+│           ├── mozambique.svg
+│           ├── namibia.svg
+│           ├── niger.svg
+│           ├── nigeria.svg
+│           ├── rwanda.svg
+│           ├── s-o-tom--and-pr-ncipe.svg
+│           ├── senegal.svg
+│           ├── seychelles.svg
+│           ├── sierra-leone.svg
+│           ├── somalia.svg
+│           ├── south-africa.svg
+│           ├── south-sudan.svg
+│           ├── tanzania.svg
+│           ├── togo.svg
+│           ├── uganda.svg
+│           ├── zambia.svg
+│           └── zimbabwe.svg
+├── src
+│   ├── app
+│   │   ├── citation-mgr
+│   │   │   ├── components
+│   │   │   │   ├── CitationExport.tsx
+│   │   │   │   ├── CitationList.tsx
+│   │   │   │   ├── CitationManager.tsx
+│   │   │   │   ├── DropZone.tsx
+│   │   │   │   ├── PDFRetrieval.tsx
+│   │   │   │   ├── SearchBar.tsx
+│   │   │   │   ├── SearchResults.tsx
+│   │   │   │   └── index.ts
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── favicon.svg
+│   │   ├── flag-quiz
+│   │   │   ├── components
+│   │   │   │   ├── FlagQuiz.tsx
+│   │   │   │   ├── GameComplete.tsx
+│   │   │   │   ├── GameScreen.tsx
+│   │   │   │   ├── Quiz-card.tsx
+│   │   │   │   ├── ScoreBoard.tsx
+│   │   │   │   ├── StartScreen.tsx
+│   │   │   │   ├── WelcomePopup.tsx
+│   │   │   │   └── index.ts
+│   │   │   └── page.tsx
+│   │   ├── flag-quiz.zip
+│   │   ├── global.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components
+│   │   ├── Alert.tsx
+│   │   ├── App-card.tsx
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   ├── Checkbox.tsx
+│   │   ├── Diagnosis-card.tsx
+│   │   ├── Dialog.tsx
+│   │   ├── Fact-card.tsx
+│   │   ├── Flag-card.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Game-controls.tsx
+│   │   ├── Header.tsx
+│   │   ├── Icons.tsx
+│   │   ├── Input.tsx
+│   │   ├── Label.tsx
+│   │   ├── Motion-wrapper.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── New-hero.tsx
+│   │   ├── Progress.tsx
+│   │   ├── Radio-group.tsx
+│   │   ├── Score-display.tsx
+│   │   ├── Simple-dialog.tsx
+│   │   ├── Theme-provider.tsx
+│   │   ├── Theme-toggle.tsx
+│   │   ├── Welcome-card.tsx
+│   │   └── index.ts
+│   ├── data
+│   │   ├── african_countries.ts
+│   │   └── countries.ts
+│   ├── hooks
+│   │   ├── cm
+│   │   │   └── useDragAndDrop.ts
+│   │   ├── fq
+│   │   │   ├── useFlags.ts
+│   │   │   ├── useGameSettings.ts
+│   │   │   └── useSound.ts
+│   │   └── useTheme.ts
+│   ├── lib
+│   │   ├── cm
+│   │   │   ├── api
+│   │   │   │   ├── crossref.ts
+│   │   │   │   ├── pubmed.ts
+│   │   │   │   └── semanticScholar.ts
+│   │   │   ├── cache.ts
+│   │   │   ├── citationStore.ts
+│   │   │   ├── downloadCitations.ts
+│   │   │   ├── formatCitation.ts
+│   │   │   ├── pdfExtractor.ts
+│   │   │   └── referenceStore.ts
+│   │   ├── fq
+│   │   └── utils
+│   │       ├── cn.ts
+│   │       ├── countries.ts
+│   │       └── utils.ts
+│   ├── styles
+│   │   ├── config.ts
+│   │   ├── index.ts
+│   │   ├── tokens.ts
+│   │   └── types.d.ts
+│   └── types
+│       ├── cm
+│       │   ├── citation.ts
+│       │   ├── citation.types.ts
+│       │   ├── pdf.types.ts
+│       │   ├── reference.types.ts
+│       │   └── types.ts
+│       ├── fq
+│       │   ├── country.ts
+│       │   ├── game.ts
+│       │   └── index.ts
+│       └── svg.d.ts
+├── tailwind.config.ts
+├── tsconfig.json
+└── vercel.json
