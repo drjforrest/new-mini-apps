@@ -36,10 +36,10 @@ export function CitationManager() {
   };
 
   return (
-    <div className="flex gap-6">
+    <div className="flex gap-6 p-6">
       {/* Left Column - Search & Tools */}
       <div className="w-[400px] flex-shrink-0">
-        <Card className="p-4 space-y-4 sticky top-4">
+        <Card className="p-4 space-y-4 sticky top-20">
           <h2 className="text-lg font-semibold mb-3">Citation Manager</h2>
           <SearchBar
             onSearch={handleSearch}
@@ -73,12 +73,10 @@ export function CitationManager() {
                 {searchResults.length} results
               </span>
             </div>
-            <div className="max-h-[60vh] overflow-y-auto">
-              <SearchResults
-                results={searchResults}
-                onAddCitation={handleAddCitation}
-              />
-            </div>
+            <SearchResults
+              results={searchResults}
+              onAddCitation={handleAddCitation}
+            />
           </Card>
         )}
 

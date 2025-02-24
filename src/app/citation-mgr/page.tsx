@@ -1,23 +1,15 @@
 "use client";
 
-import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
-import { Header, Footer, CustomThemeProvider, Card } from "@components/index";
-import "./globals.css";
+import React from "react";
+import { Card } from "@components/index";
 import { CitationManager } from "./components/CitationManager";
 
-export default function CitationManagerPage() {
+export default function CitationManagerPage(): React.ReactElement {
   return (
-    <div className="min-h-screen bg-surface-muted p-4 sm:p-8">
-      <Header />
-      <CustomThemeProvider>
-        <div className="container mx-auto max-w-6xl">
-          <Card className="p-6 sm:p-8 bg-surface/95 backdrop-blur-sm">
-            <CitationManager />
-          </Card>
-        </div>
-      </CustomThemeProvider>
-      <Footer />
+    <div className="container mx-auto py-8 mt-16">
+      <Card className="p-6 sm:p-8 bg-surface/95 backdrop-blur-sm">
+        <CitationManager />
+      </Card>
     </div>
   );
 }

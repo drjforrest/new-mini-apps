@@ -26,7 +26,7 @@ export function SearchResults({ results, onAddCitation }: SearchResultsProps) {
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 max-h-[calc(100vh-12rem)] overflow-y-auto">
       {results.map((result) => {
         const isAdded = addedIds.has(result.id);
 

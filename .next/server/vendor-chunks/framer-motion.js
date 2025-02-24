@@ -1061,26 +1061,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "(ssr)/./node_modules/framer-motion/dist/es/render/components/m/create.mjs":
-/*!***************************************************************************!*\
-  !*** ./node_modules/framer-motion/dist/es/render/components/m/create.mjs ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createMinimalMotionComponent: () => (/* binding */ createMinimalMotionComponent)\n/* harmony export */ });\n/* harmony import */ var _create_factory_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../create-factory.mjs */ \"(ssr)/./node_modules/framer-motion/dist/es/render/components/create-factory.mjs\");\n\n\nconst createMinimalMotionComponent = \n/*@__PURE__*/ (0,_create_factory_mjs__WEBPACK_IMPORTED_MODULE_0__.createMotionComponentFactory)();\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvZnJhbWVyLW1vdGlvbi9kaXN0L2VzL3JlbmRlci9jb21wb25lbnRzL20vY3JlYXRlLm1qcyIsIm1hcHBpbmdzIjoiOzs7OztBQUFxRTs7QUFFckU7QUFDQSxjQUFjLGlGQUE0Qjs7QUFFRiIsInNvdXJjZXMiOlsid2VicGFjazovL25ldy1taW5pLWFwcHMvLi9ub2RlX21vZHVsZXMvZnJhbWVyLW1vdGlvbi9kaXN0L2VzL3JlbmRlci9jb21wb25lbnRzL20vY3JlYXRlLm1qcz8yYjBlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNyZWF0ZU1vdGlvbkNvbXBvbmVudEZhY3RvcnkgfSBmcm9tICcuLi9jcmVhdGUtZmFjdG9yeS5tanMnO1xuXG5jb25zdCBjcmVhdGVNaW5pbWFsTW90aW9uQ29tcG9uZW50ID0gXG4vKkBfX1BVUkVfXyovIGNyZWF0ZU1vdGlvbkNvbXBvbmVudEZhY3RvcnkoKTtcblxuZXhwb3J0IHsgY3JlYXRlTWluaW1hbE1vdGlvbkNvbXBvbmVudCB9O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/render/components/m/create.mjs\n");
-
-/***/ }),
-
-/***/ "(ssr)/./node_modules/framer-motion/dist/es/render/components/m/proxy.mjs":
-/*!**************************************************************************!*\
-  !*** ./node_modules/framer-motion/dist/es/render/components/m/proxy.mjs ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   m: () => (/* binding */ m)\n/* harmony export */ });\n/* harmony import */ var _create_proxy_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../create-proxy.mjs */ \"(ssr)/./node_modules/framer-motion/dist/es/render/components/create-proxy.mjs\");\n/* harmony import */ var _create_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./create.mjs */ \"(ssr)/./node_modules/framer-motion/dist/es/render/components/m/create.mjs\");\n\n\n\nconst m = /*@__PURE__*/ (0,_create_proxy_mjs__WEBPACK_IMPORTED_MODULE_0__.createDOMMotionComponentProxy)(_create_mjs__WEBPACK_IMPORTED_MODULE_1__.createMinimalMotionComponent);\n\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvZnJhbWVyLW1vdGlvbi9kaXN0L2VzL3JlbmRlci9jb21wb25lbnRzL20vcHJveHkubWpzIiwibWFwcGluZ3MiOiI7Ozs7OztBQUFvRTtBQUNSOztBQUU1RCx3QkFBd0IsZ0ZBQTZCLENBQUMscUVBQTRCOztBQUVyRSIsInNvdXJjZXMiOlsid2VicGFjazovL25ldy1taW5pLWFwcHMvLi9ub2RlX21vZHVsZXMvZnJhbWVyLW1vdGlvbi9kaXN0L2VzL3JlbmRlci9jb21wb25lbnRzL20vcHJveHkubWpzPzRkZGQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgY3JlYXRlRE9NTW90aW9uQ29tcG9uZW50UHJveHkgfSBmcm9tICcuLi9jcmVhdGUtcHJveHkubWpzJztcbmltcG9ydCB7IGNyZWF0ZU1pbmltYWxNb3Rpb25Db21wb25lbnQgfSBmcm9tICcuL2NyZWF0ZS5tanMnO1xuXG5jb25zdCBtID0gLypAX19QVVJFX18qLyBjcmVhdGVET01Nb3Rpb25Db21wb25lbnRQcm94eShjcmVhdGVNaW5pbWFsTW90aW9uQ29tcG9uZW50KTtcblxuZXhwb3J0IHsgbSB9O1xuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/framer-motion/dist/es/render/components/m/proxy.mjs\n");
-
-/***/ }),
-
 /***/ "(ssr)/./node_modules/framer-motion/dist/es/render/components/motion/create.mjs":
 /*!********************************************************************************!*\
   !*** ./node_modules/framer-motion/dist/es/render/components/motion/create.mjs ***!

@@ -68,19 +68,6 @@ export function DropZone({
           aria-hidden="true"
         />
 
-        {/* Icon */}
-        <div
-          className={`relative z-10 mb-4 transition-transform duration-300 ${
-            isDragging ? "scale-110 -translate-y-1" : ""
-          }`}
-        >
-          {isDragging
-            ? isValidFile
-              ? "Drop to upload"
-              : "Invalid file type"
-            : "Drop PDF here"}
-        </div>
-
         {/* Text Content */}
         <div
           className={`text-center relative z-10 transition-opacity duration-300 ${

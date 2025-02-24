@@ -1,14 +1,14 @@
-import React, { HTMLAttributes } from "react";
-import { motion, PanInfo } from "framer-motion";
+import React from "react";
+import { motion, PanInfo, HTMLMotionProps } from "framer-motion";
 import { cn } from "@lib/utils/cn";
 
 export type CardProps = {
-  variant?: "default" | "interactive" | "game"; // ✅ Added "game"
+  variant?: "default" | "interactive" | "game";
   onDragEnd?: (
     event: MouseEvent | TouchEvent | PointerEvent,
     info: PanInfo,
   ) => void;
-} & Omit<HTMLAttributes<HTMLDivElement>, "onDragEnd">;
+} & Omit<HTMLMotionProps<"div">, "onDragEnd">;
 
 const Card = React.forwardRef<HTMLDivElement, CardProps>(
   ({ className, variant = "default", onDragEnd, ...props }, ref) => (

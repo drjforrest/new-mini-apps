@@ -1,4 +1,3 @@
 {
-  "/page": "app/page.js",
-  "/flag-quiz/page": "app/flag-quiz/page.js"
+  "/citation-mgr/page": "app/citation-mgr/page.js"
 }

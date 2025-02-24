@@ -1,4 +1,6 @@
-import { Citation, SearchResult } from '../types/types';
+import { Citation, SearchResult } from 'types/cm/types';
+
+const isClient = typeof window !== 'undefined';
 
 const CACHE_KEYS = {
   CITATIONS: 'citations-cache',
@@ -13,8 +15,10 @@ interface CacheItem<T> {
 
 export const citationCache = {
   getCitations(): Citation[] {
+    if (!isClient) return [];
+    
     try {
-      const cached = localStorage.getItem(CACHE_KEYS.CITATIONS);
+      const cached = window.localStorage.getItem(CACHE_KEYS.CITATIONS);
       if (!cached) return [];
 
       const { data, timestamp }: CacheItem<Citation[]> = JSON.parse(cached);
@@ -31,12 +35,14 @@ export const citationCache = {
       data: citations,
       timestamp: Date.now()
     };
-    localStorage.setItem(CACHE_KEYS.CITATIONS, JSON.stringify(cacheItem));
+    if (!isClient) return;
+    window.localStorage.setItem(CACHE_KEYS.CITATIONS, JSON.stringify(cacheItem));
   },
 
   getSearchResults(query: string): SearchResult[] | null {
     try {
-      const cached = localStorage.getItem(`${CACHE_KEYS.SEARCH_RESULTS}-${query}`);
+      if (!isClient) return null;
+      const cached = window.localStorage.getItem(`${CACHE_KEYS.SEARCH_RESULTS}-${query}`);
       if (!cached) return null;
 
       const { data, timestamp }: CacheItem<SearchResult[]> = JSON.parse(cached);
@@ -53,9 +59,10 @@ export const citationCache = {
       data: results,
       timestamp: Date.now()
     };
-    localStorage.setItem(
+    if (!isClient) return;
+    window.localStorage.setItem(
       `${CACHE_KEYS.SEARCH_RESULTS}-${query}`, 
       JSON.stringify(cacheItem)
     );
   }
-}; 
+};

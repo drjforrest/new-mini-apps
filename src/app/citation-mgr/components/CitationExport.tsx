@@ -91,7 +91,7 @@ export function CitationExport({ citations }: CitationExportProps) {
           <Button
             onClick={handleCopy}
             disabled={citations.length === 0}
-            className="flex-1 flex items-center justify-center gap-2"
+            className="flex-1 flex items-center justify-center gap-2 px-4 py-2"
           >
             {showCopySuccess ? (
               <>
@@ -109,7 +109,7 @@ export function CitationExport({ citations }: CitationExportProps) {
             onClick={handleExport}
             disabled={citations.length === 0}
             variant="secondary"
-            className="flex items-center justify-center gap-2"
+            className="flex items-center justify-center gap-2 px-4 py-2"
           >
             {showExportSuccess ? (
               <Check className="w-4 h-4" />
