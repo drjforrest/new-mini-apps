@@ -1,1 +1,14 @@
-{}
+{
+  "components/Header.tsx -> lucide-react": {
+    "id": "components/Header.tsx -> lucide-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_lucide-react_dist_esm_lucide-react_js.js"
+    ]
+  },
+  "components/Theme-toggle.tsx -> lucide-react": {
+    "id": "components/Theme-toggle.tsx -> lucide-react",
+    "files": [
+      "static/chunks/_app-pages-browser_node_modules_lucide-react_dist_esm_lucide-react_js.js"
+    ]
+  }
+}

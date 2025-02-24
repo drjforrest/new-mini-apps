@@ -10,7 +10,7 @@ declare const process: {
 export const AFRICAN_COUNTRIES: Country[] = [
   {
     name: "Algeria",
-    flagUrl: "/flag-quiz/flags/algeria.svg",
+    flagUrl: "/assets/flags/algeria.svg",
     region: "North Africa",
     capital: "Algiers",
     population: 44616624,
@@ -23,7 +23,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Angola",
-    flagUrl: "/flag-quiz/flags/angola.svg",
+    flagUrl: "/assets/flags/angola.svg",
     region: "Southern Africa",
     capital: "Luanda",
     population: 32866272,
@@ -36,7 +36,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Benin",
-    flagUrl: "/flag-quiz/flags/benin.svg",
+    flagUrl: "/assets/flags/benin.svg",
     region: "West Africa",
     capital: "Porto-Novo",
     population: 12123198,
@@ -49,7 +49,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Botswana",
-    flagUrl: "/flag-quiz/flags/botswana.svg",
+    flagUrl: "/assets/flags/botswana.svg",
     region: "Southern Africa",
     capital: "Gaborone",
     population: 2351627,
@@ -62,7 +62,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Burkina Faso",
-    flagUrl: "/flag-quiz/flags/burkina_faso.svg",
+    flagUrl: "/assets/flags/burkina-faso.svg",
     region: "West Africa",
     capital: "Ouagadougou",
     population: 20903278,
@@ -75,7 +75,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Burundi",
-    flagUrl: "/flag-quiz/flags/burundi.svg",
+    flagUrl: "/assets/flags/burundi.svg",
     region: "East Africa",
     capital: "Gitega",
     population: 11890784,
@@ -88,7 +88,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Cameroon",
-    flagUrl: "/flag-quiz/flags/cameroon.svg",
+    flagUrl: "/assets/flags/cameroon.svg",
     region: "Central Africa",
     capital: "Yaoundé",
     population: 26545863,
@@ -101,7 +101,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Cape Verde",
-    flagUrl: "/flag-quiz/flags/cape_verde.svg",
+    flagUrl: "/assets/flags/cape-verde.svg",
     region: "Islands",
     capital: "Praia",
     population: 555987,
@@ -114,7 +114,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Central African Republic",
-    flagUrl: "/flag-quiz/flags/central_african_republic.svg",
+    flagUrl: "/assets/flags/central-african-republic.svg",
     region: "Central Africa",
     capital: "Bangui",
     population: 4829767,
@@ -127,7 +127,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Chad",
-    flagUrl: "/flag-quiz/flags/chad.svg",
+    flagUrl: "/assets/flags/chad.svg",
     region: "Central Africa",
     capital: "N'Djamena",
     population: 16425864,
@@ -140,7 +140,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Comoros",
-    flagUrl: "/flag-quiz/flags/comoros.svg",
+    flagUrl: "/assets/flags/comoros.svg",
     region: "Islands",
     capital: "Moroni",
     population: 869601,
@@ -153,7 +153,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Djibouti",
-    flagUrl: "/flag-quiz/flags/djibouti.svg",
+    flagUrl: "/assets/flags/djibouti.svg",
     region: "Eastern Africa",
     capital: "Djibouti City",
     population: 988002,
@@ -166,7 +166,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Democratic Republic of the Congo",
-    flagUrl: "/flag-quiz/flags/drc.svg",
+    flagUrl: "/assets/flags/democratic-republic-of-the-congo.svg",
     region: "Central Africa",
     capital: "Kinshasa",
     population: 89561403,
@@ -179,7 +179,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Equatorial Guinea",
-    flagUrl: "/flag-quiz/flags/equatorial_guinea.svg",
+    flagUrl: "/assets/flags/equatorial-guinea.svg",
     region: "Central Africa",
     capital: "Malabo",
     population: 1402985,
@@ -192,7 +192,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Eswatini",
-    flagUrl: "/flag-quiz/flags/eswatini.svg",
+    flagUrl: "/assets/flags/eswatini.svg",
     region: "Southern Africa",
     capital: "Mbabane (administrative), Lobamba (legislative)",
     population: 1160164,
@@ -205,7 +205,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Ethiopia",
-    flagUrl: "/flag-quiz/flags/ethiopia.svg",
+    flagUrl: "/assets/flags/ethiopia.svg",
     region: "Eastern Africa",
     capital: "Addis Ababa",
     population: 120283026,
@@ -218,7 +218,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Gabon",
-    flagUrl: "/flag-quiz/flags/gabon.svg",
+    flagUrl: "/assets/flags/gabon.svg",
     region: "Central Africa",
     capital: "Libreville",
     population: 2225734,
@@ -231,7 +231,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Gambia",
-    flagUrl: "/flag-quiz/flags/gambia.svg",
+    flagUrl: "/assets/flags/gambia.svg",
     region: "West Africa",
     capital: "Banjul",
     population: 2416668,
@@ -244,7 +244,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Ghana",
-    flagUrl: "/flag-quiz/flags/ghana.svg",
+    flagUrl: "/assets/flags/ghana.svg",
     region: "West Africa",
     capital: "Accra",
     population: 31072940,
@@ -257,7 +257,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Guinea",
-    flagUrl: "/flag-quiz/flags/guinea.svg",
+    flagUrl: "/assets/flags/guinea.svg",
     region: "West Africa",
     capital: "Conakry",
     population: 13132795,
@@ -270,7 +270,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Guinea-Bissau",
-    flagUrl: "/flag-quiz/flags/guinea_bissau.svg",
+    flagUrl: "/assets/flags/guinea-bissau.svg",
     region: "West Africa",
     capital: "Bissau",
     population: 1968001,
@@ -283,7 +283,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Côte d'Ivoire",
-    flagUrl: "/flag-quiz/flags/cote_divoire.svg",
+    flagUrl: "/assets/flags/c-te-d-ivoire.svg",
     region: "West Africa",
     capital: "Yamoussoukro",
     population: 26378274,
@@ -296,7 +296,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Kenya",
-    flagUrl: "/flag-quiz/flags/kenya.svg",
+    flagUrl: "/assets/flags/kenya.svg",
     region: "East Africa",
     capital: "Nairobi",
     population: 53771300,
@@ -309,7 +309,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Lesotho",
-    flagUrl: "/flag-quiz/flags/lesotho.svg",
+    flagUrl: "/assets/flags/lesotho.svg",
     region: "Southern Africa",
     capital: "Maseru",
     population: 2142249,
@@ -322,7 +322,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Liberia",
-    flagUrl: "/flag-quiz/flags/liberia.svg",
+    flagUrl: "/assets/flags/liberia.svg",
     region: "West Africa",
     capital: "Monrovia",
     population: 5057681,
@@ -335,7 +335,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Libya",
-    flagUrl: "/flag-quiz/flags/libya.svg",
+    flagUrl: "/assets/flags/libya.svg",
     region: "North Africa",
     capital: "Tripoli",
     population: 6871292,
@@ -348,7 +348,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Madagascar",
-    flagUrl: "/flag-quiz/flags/madagascar.svg",
+    flagUrl: "/assets/flags/madagascar.svg",
     region: "Southern Africa",
     capital: "Antananarivo",
     population: 27691018,
@@ -361,7 +361,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Malawi",
-    flagUrl: "/flag-quiz/flags/malawi.svg",
+    flagUrl: "/assets/flags/malawi.svg",
     region: "Southern Africa",
     capital: "Lilongwe",
     population: 19129952,
@@ -374,7 +374,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Mali",
-    flagUrl: "/flag-quiz/flags/mali.svg",
+    flagUrl: "/assets/flags/mali.svg",
     region: "West Africa",
     capital: "Bamako",
     population: 20250833,
@@ -387,7 +387,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Mauritania",
-    flagUrl: "/flag-quiz/flags/mauritania.svg",
+    flagUrl: "/assets/flags/mauritania.svg",
     region: "North Africa",
     capital: "Nouakchott",
     population: 4649658,
@@ -400,7 +400,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Mauritius",
-    flagUrl: "/flag-quiz/flags/mauritius.svg",
+    flagUrl: "/assets/flags/mauritius.svg",
     region: "Islands",
     capital: "Port Louis",
     population: 1265740,
@@ -413,7 +413,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Morocco",
-    flagUrl: "/flag-quiz/flags/morocco.svg",
+    flagUrl: "/assets/flags/morocco.svg",
     region: "North Africa",
     capital: "Rabat",
     population: 36910560,
@@ -426,7 +426,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Mozambique",
-    flagUrl: "/flag-quiz/flags/mozambique.svg",
+    flagUrl: "/assets/flags/mozambique.svg",
     region: "Southern Africa",
     capital: "Maputo",
     population: 31255435,
@@ -439,7 +439,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Namibia",
-    flagUrl: "/flag-quiz/flags/namibia.svg",
+    flagUrl: "/assets/flags/namibia.svg",
     region: "Southern Africa",
     capital: "Windhoek",
     population: 2540905,
@@ -452,7 +452,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Niger",
-    flagUrl: "/flag-quiz/flags/niger.svg",
+    flagUrl: "/assets/flags/niger.svg",
     region: "West Africa",
     capital: "Niamey",
     population: 24206636,
@@ -465,7 +465,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Nigeria",
-    flagUrl: "/flag-quiz/flags/nigeria.svg",
+    flagUrl: "/assets/flags/nigeria.svg",
     region: "West Africa",
     capital: "Abuja",
     population: 206139589,
@@ -478,7 +478,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Rwanda",
-    flagUrl: "/flag-quiz/flags/rwanda.svg",
+    flagUrl: "/assets/flags/rwanda.svg",
     region: "East Africa",
     capital: "Kigali",
     population: 13000000,
@@ -491,7 +491,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "São Tomé and Príncipe",
-    flagUrl: "/flag-quiz/flags/sao_tome_principe.svg",
+    flagUrl: "/assets/flags/s-o-tom--and-pr-ncipe.svg",
     region: "Islands",
     capital: "São Tomé",
     population: 219159,
@@ -504,7 +504,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Senegal",
-    flagUrl: "/flag-quiz/flags/senegal.svg",
+    flagUrl: "/assets/flags/senegal.svg",
     region: "West Africa",
     capital: "Dakar",
     population: 16743927,
@@ -517,7 +517,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Seychelles",
-    flagUrl: "/flag-quiz/flags/seychelles.svg",
+    flagUrl: "/assets/flags/seychelles.svg",
     region: "Islands",
     capital: "Victoria",
     population: 98347,
@@ -530,7 +530,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Sierra Leone",
-    flagUrl: "/flag-quiz/flags/sierra_leone.svg",
+    flagUrl: "/assets/flags/sierra-leone.svg",
     region: "West Africa",
     capital: "Freetown",
     population: 7976983,
@@ -543,7 +543,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Somalia",
-    flagUrl: "/flag-quiz/flags/somalia.svg",
+    flagUrl: "/assets/flags/somalia.svg",
     region: "East Africa",
     capital: "Mogadishu",
     population: 15893222,
@@ -556,7 +556,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "South Africa",
-    flagUrl: "/flag-quiz/flags/south_africa.svg",
+    flagUrl: "/assets/flags/south-africa.svg",
     region: "Southern Africa",
     capital:
       "Pretoria (administrative), Cape Town (legislative), Bloemfontein (judicial)",
@@ -581,7 +581,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "South Sudan",
-    flagUrl: "/flag-quiz/flags/south_sudan.svg",
+    flagUrl: "/assets/flags/south-sudan.svg",
     region: "East Africa",
     capital: "Juba",
     population: 11193729,
@@ -594,7 +594,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Tanzania",
-    flagUrl: "/flag-quiz/flags/tanzania.svg",
+    flagUrl: "/assets/flags/tanzania.svg",
     region: "East Africa",
     capital: "Dodoma",
     population: 59734218,
@@ -607,7 +607,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Togo",
-    flagUrl: "/flag-quiz/flags/togo.svg",
+    flagUrl: "/assets/flags/togo.svg",
     region: "West Africa",
     capital: "Lomé",
     population: 8278724,
@@ -620,7 +620,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Uganda",
-    flagUrl: "/flag-quiz/flags/uganda.svg",
+    flagUrl: "/assets/flags/uganda.svg",
     region: "East Africa",
     capital: "Kampala",
     population: 45741007,
@@ -633,7 +633,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Zambia",
-    flagUrl: "/flag-quiz/flags/zambia.svg",
+    flagUrl: "/assets/flags/zambia.svg",
     region: "Southern Africa",
     capital: "Lusaka",
     population: 18383955,
@@ -646,7 +646,7 @@ export const AFRICAN_COUNTRIES: Country[] = [
   },
   {
     name: "Zimbabwe",
-    flagUrl: "/flag-quiz/flags/zimbabwe.svg",
+    flagUrl: "/assets/flags/zimbabwe.svg",
     region: "Southern Africa",
     capital: "Harare",
     population: 14862924,

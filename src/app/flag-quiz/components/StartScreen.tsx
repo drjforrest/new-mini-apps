@@ -1,12 +1,19 @@
-import { Flag, Target, Award } from "lucide-react";
+import { Flag, Target, Award, Settings } from "lucide-react";
 import { Button } from "@components/index";
 import { motion } from "framer-motion";
+import { AFRICAN_COUNTRIES } from "@data/countries";
+import { useGameSettings } from "@hooks/fq/useGameSettings";
 
 interface StartScreenProps {
   onStart: () => void;
 }
 
 export function StartScreen({ onStart }: StartScreenProps) {
+  const { settings, updateSettings } = useGameSettings();
+  const availableRegions = [
+    "All",
+    ...new Set(AFRICAN_COUNTRIES.map((c) => c.region).filter(Boolean)),
+  ];
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -75,6 +82,69 @@ export function StartScreen({ onStart }: StartScreenProps) {
               Learn interesting facts about each country as you play, from
               capitals to languages and culture.
             </p>
+          </div>
+        </motion.div>
+
+        <motion.div variants={itemVariants} className="flex items-start gap-4">
+          <div className="rounded-xl p-3 bg-primary/10">
+            <Settings className="w-6 h-6 text-primary" strokeWidth={1.5} />
+          </div>
+          <div className="w-full">
+            <h3 className="font-medium text-foreground mb-4">Game Settings</h3>
+            <div className="space-y-4">
+              {/* Difficulty Selection */}
+              <div className="flex items-center gap-3">
+                <label className="text-sm text-muted min-w-24">Difficulty:</label>
+                <select
+                  value={settings.difficulty}
+                  onChange={(e) => updateSettings({ difficulty: e.target.value })}
+                  className="flex-1 px-3 py-2 border rounded-md bg-surface text-foreground"
+                >
+                  <option value="easy">Easy (Region Restricted)</option>
+                  <option value="hard">Hard (All Regions & Islands)</option>
+                </select>
+              </div>
+
+              {/* Region Selection (Only in Easy Mode) */}
+              {settings.difficulty === "easy" && (
+                <div className="flex items-center gap-3">
+                  <label className="text-sm text-muted min-w-24">Region:</label>
+                  <select
+                    value={settings.region}
+                    onChange={(e) => updateSettings({ region: e.target.value })}
+                    className="flex-1 px-3 py-2 border rounded-md bg-surface text-foreground"
+                  >
+                    {availableRegions.map((region) => (
+                      <option key={region} value={region}>
+                        {region}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              )}
+
+              {/* Sound Toggle */}
+              <div className="flex items-center gap-3">
+                <label className="text-sm text-muted min-w-24">Sound:</label>
+                <input
+                  type="checkbox"
+                  checked={settings.sound}
+                  onChange={(e) => updateSettings({ sound: e.target.checked })}
+                  className="h-4 w-4"
+                />
+              </div>
+
+              {/* Hints Toggle */}
+              <div className="flex items-center gap-3">
+                <label className="text-sm text-muted min-w-24">Show Hints:</label>
+                <input
+                  type="checkbox"
+                  checked={settings.showHints}
+                  onChange={(e) => updateSettings({ showHints: e.target.checked })}
+                  className="h-4 w-4"
+                />
+              </div>
+            </div>
           </div>
         </motion.div>
 

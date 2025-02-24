@@ -3,7 +3,7 @@
 import { Card } from "./Card";
 import { cn } from "@lib/utils/cn";
 
-interface FlagCardProps {
+export interface FlagCardProps {
   flagUrl: string;
   isLoading?: boolean;
   isSelected?: boolean;

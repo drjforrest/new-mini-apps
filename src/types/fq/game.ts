@@ -1,33 +1,15 @@
-import type { Country } from './index';
-
-export interface Answer {
-  country: Country;
-  isCorrect: boolean;
-}
+import type { Country } from "./country";
 
 export interface QuizState {
   score: number;
   currentStreak: number;
   currentQuestion: Country | null;
   questionIndex: number;
-  gameMode: 'practice' | 'challenge' | 'regional';
+  gameMode: "practice";
   isGameOver: boolean;
   showFeedback: boolean;
-  lastAnswer: Answer | null;
+  lastAnswer: {
+    country: Country;
+    isCorrect: boolean;
+  } | null;
 }
-
-export interface GameScreenProps {
-  currentFlag: Country;
-  options: Country[];
-  currentQuestion: number;
-  score: number;
-  showFeedback: boolean;
-  lastAnswer: Answer | null;
-  onAnswer: (answer: Country | null) => void;
-}
-
-export enum Difficulty {
-  Easy = 'easy',
-  Medium = 'medium',
-  Hard = 'hard'
-} 

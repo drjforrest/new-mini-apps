@@ -2,8 +2,18 @@
 
 import { AppCard, DiagnosisCard, NewHero } from "@components/index";
 import { BookOpen, Flag } from "lucide-react";
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { WelcomePopup } from "./flag-quiz/components/WelcomePopup";
 
 export default function Home() {
+  const router = useRouter();
+  const [showFlagQuizPopup, setShowFlagQuizPopup] = useState(false);
+
+  const handleFlagQuizClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowFlagQuizPopup(true);
+  };
   return (
     <div>
       <main className="relative z-10 py-8 md:py-10">
@@ -35,9 +45,19 @@ export default function Home() {
                 title="Flags of Africa: A Quiz Game"
                 description="Test your knowledge of African countries' flags with this fun and interactive short quiz game application."
                 href="/flag-quiz"
+                onClick={handleFlagQuizClick}
                 icon={
                   <Flag className="w-6 h-6 text-accent dark:text-accent/90" />
                 }
+              />
+
+              <WelcomePopup
+                isOpen={showFlagQuizPopup}
+                onClose={() => setShowFlagQuizPopup(false)}
+                onStart={() => {
+                  setShowFlagQuizPopup(false);
+                  router.push('/flag-quiz');
+                }}
               />
             </div>
           </div>
