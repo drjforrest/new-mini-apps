@@ -1,5 +1,5 @@
-import * as pdfjs from 'pdfjs-dist';
-import type { Citation } from '../types/types';
+ import * as pdfjs from 'pdfjs-dist';
+import type { Citation } from '../../types/cm/types';
 
 // DOI regex pattern
 const DOI_PATTERN = /\b(10\.\d{4,}\/[-._;()\/:a-z0-9]+)\b/i;
@@ -86,4 +86,4 @@ export async function extractCitationFromPDF(file: File): Promise<Citation> {
     console.error('Failed to extract citation from PDF:', error);
     throw new Error('Failed to extract citation from PDF');
   }
-} 
+}

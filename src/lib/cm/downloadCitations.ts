@@ -1,4 +1,4 @@
-import { Citation, CitationFormat, ExportFormat } from '../types/types';
+import { Citation, CitationFormat, ExportFormat } from '../../types/cm/types';
 
 interface FormatOptions {
   includeAbstracts?: boolean;
@@ -65,4 +65,4 @@ export function downloadCitations(citations: Citation[], format: CitationFormat,
   link.click();
   document.body.removeChild(link);
   URL.revokeObjectURL(url);
-} 
+}

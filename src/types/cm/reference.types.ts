@@ -28,7 +28,7 @@ export interface LibraryPaper extends BasePaper {
   added_at: string;
   tags?: string[];
   notes?: string;
-  state: 'library';
+  state: 'library' | 'chat';
 }
 
 export interface ChatPaper extends LibraryPaper {

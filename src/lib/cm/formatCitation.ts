@@ -1,4 +1,4 @@
-import type { Citation, CitationFormat, ExportFormat } from './types/types';
+import type { Citation, CitationFormat, ExportFormat } from '../../types/cm/types';
 
 function formatAuthors(authors: Citation['authors'], format: CitationFormat): string {
   const authorNames = authors.map(author => author.name);

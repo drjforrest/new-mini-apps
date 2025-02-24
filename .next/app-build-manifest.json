@@ -1,20 +1,58 @@
 {
   "pages": {
-    "/citation-mgr/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/citation-mgr/page.js"
-    ],
-    "/citation-mgr/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/citation-mgr/layout.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-640199edfc68cc3e.js",
+      "static/chunks/fd9d1056-d01e9804f4c81514.js",
+      "static/chunks/117-b3204c865f6211a0.js",
+      "static/chunks/main-app-d5e881f9bea7ea2d.js",
+      "static/chunks/app/_not-found/page-d8c76cdaa4cf8408.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-640199edfc68cc3e.js",
+      "static/chunks/fd9d1056-d01e9804f4c81514.js",
+      "static/chunks/117-b3204c865f6211a0.js",
+      "static/chunks/main-app-d5e881f9bea7ea2d.js",
+      "static/css/7049105a17297ba8.css",
+      "static/chunks/52-f07a93b49a4149d6.js",
+      "static/chunks/913-7652b18ee33ff5d3.js",
+      "static/chunks/app/layout-2e07d1d187cb6816.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-640199edfc68cc3e.js",
+      "static/chunks/fd9d1056-d01e9804f4c81514.js",
+      "static/chunks/117-b3204c865f6211a0.js",
+      "static/chunks/main-app-d5e881f9bea7ea2d.js",
+      "static/chunks/52-f07a93b49a4149d6.js",
+      "static/chunks/913-7652b18ee33ff5d3.js",
+      "static/chunks/app/page-1095886124a31190.js"
+    ],
+    "/flag-quiz/page": [
+      "static/chunks/webpack-640199edfc68cc3e.js",
+      "static/chunks/fd9d1056-d01e9804f4c81514.js",
+      "static/chunks/117-b3204c865f6211a0.js",
+      "static/chunks/main-app-d5e881f9bea7ea2d.js",
+      "static/chunks/52-f07a93b49a4149d6.js",
+      "static/chunks/724-784e4fa3bb787318.js",
+      "static/chunks/913-7652b18ee33ff5d3.js",
+      "static/chunks/app/flag-quiz/page-9d49e7ba20a668b7.js"
+    ],
+    "/citation-mgr/page": [
+      "static/chunks/webpack-640199edfc68cc3e.js",
+      "static/chunks/fd9d1056-d01e9804f4c81514.js",
+      "static/chunks/117-b3204c865f6211a0.js",
+      "static/chunks/main-app-d5e881f9bea7ea2d.js",
+      "static/chunks/9b0008ae-cf1f4b39f25215ff.js",
+      "static/chunks/52-f07a93b49a4149d6.js",
+      "static/chunks/254-801a02cbcaae75e3.js",
+      "static/chunks/913-7652b18ee33ff5d3.js",
+      "static/chunks/app/citation-mgr/page-1f9d0430ba83fc67.js"
+    ],
+    "/citation-mgr/layout": [
+      "static/chunks/webpack-640199edfc68cc3e.js",
+      "static/chunks/fd9d1056-d01e9804f4c81514.js",
+      "static/chunks/117-b3204c865f6211a0.js",
+      "static/chunks/main-app-d5e881f9bea7ea2d.js",
+      "static/chunks/app/citation-mgr/layout-5f5e572029c75e2e.js"
     ]
   }
 }
